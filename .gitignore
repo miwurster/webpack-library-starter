@@ -1,3 +1,7 @@
+
+# Created by https://www.gitignore.io/api/node,visualstudiocode
+
+### Node ###
 # Logs
 logs
 *.log
@@ -57,3 +61,12 @@ typings/
 # dotenv environment variables file
 .env
 
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# End of https://www.gitignore.io/api/node,visualstudiocode

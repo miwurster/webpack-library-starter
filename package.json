@@ -1,0 +1,45 @@
+{
+  "name": "webpack-library-starter",
+  "version": "1.0.0",
+  "description": "JavaScript (ES6) Library Starter",
+  "author": "Michael Wurster <miwurster@gmail.com>",
+  "license": "MIT",
+  "main": "lib/library.js",
+  "module": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "webpack --config webpack.config.js --progress --profile --bail",
+    "lint": "eslint test src --ext .js",
+    "test": "npm run lint && jest --coverage",
+    "build": "npm run lint && npm start && webpack --config webpack.prod.js --progress --profile --bail"
+  },
+  "homepage": "https://github.com/miwurster/webpack-library-starter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miwurster/webpack-library-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miwurster/webpack-library-starter/issues"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "jest": "^20.0.4",
+    "webpack": "^2.6.1",
+    "webpack-merge": "^4.1.0"
+  }
+}
